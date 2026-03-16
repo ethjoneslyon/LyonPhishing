@@ -27,7 +27,7 @@ const RECIPIENTS = [
 async function run() {
   const transporter = nodemailer.createTransport(SMTP);
 
-  for (const recipient of RECIPIENTS.filter(r => r.email === 'cotopaxi@lyonquality.com')) {
+  for (const recipient of RECIPIENTS) {
     await transporter.sendMail({
       from: '"Google Security" <action.needed.alert.us.2026@gmail.com>',
       to: `"${recipient.name}" <${recipient.email}>`,
