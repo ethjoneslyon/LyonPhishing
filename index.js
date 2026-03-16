@@ -8,7 +8,7 @@ const SMTP = {
   secure: false,
   auth: {
     user: 'action.needed.alert.us.2026@gmail.com',
-    pass: 'wpk1dct0etr-xbt3DPJ',
+    pass: 'mloy vgcc bigk quwp',
   },
 };
 
