@@ -15,10 +15,11 @@ const SMTP = {
 const AWARENESS_PAGE = 'https://ethjoneslyon.github.io/LyonPhishing';
 
 const RECIPIENTS = [
-  { name: 'Jes Solomon',    email: 'jes@lyonquality.com' },
-  { name: 'Stacia Sexton',  email: 'stacia@lyonquality.com' },
-  { name: 'Shaelyn Reno',   email: 'shaelyn@lyonquality.com' },
-  { name: 'Ethan Jones',    email: 'ethan@lyonquality.com' },
+  { name: 'Jes Solomon',     email: 'jes@lyonquality.com' },
+  { name: 'Stacia Sexton',   email: 'stacia@lyonquality.com' },
+  { name: 'Shaelyn Reno',    email: 'shaelyn@lyonquality.com' },
+  { name: 'Ethan Jones',     email: 'ethan@lyonquality.com' },
+  { name: 'Cotopaxi Lyon',   email: 'cotopaxi@lyonquality.com' },
 ];
 
 // ─── SEND EMAILS ─────────────────────────────────────────────────────────────
@@ -26,7 +27,7 @@ const RECIPIENTS = [
 async function run() {
   const transporter = nodemailer.createTransport(SMTP);
 
-  for (const recipient of RECIPIENTS) {
+  for (const recipient of RECIPIENTS.filter(r => r.email === 'cotopaxi@lyonquality.com')) {
     await transporter.sendMail({
       from: '"Google Security" <action.needed.alert.us.2026@gmail.com>',
       to: `"${recipient.name}" <${recipient.email}>`,
