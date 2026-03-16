@@ -12,13 +12,13 @@ const SMTP = {
   },
 };
 
-// Your GitHub Pages URL (update this once you have it)
 const AWARENESS_PAGE = 'https://ethjoneslyon.github.io/LyonPhishing';
 
 const RECIPIENTS = [
   { name: 'Jes Solomon',    email: 'jes@lyonquality.com' },
   { name: 'Stacia Sexton',  email: 'stacia@lyonquality.com' },
   { name: 'Shaelyn Reno',   email: 'shaelyn@lyonquality.com' },
+  { name: 'Ethan Jones',    email: 'ethan@lyonquality.com' },
 ];
 
 // ─── SEND EMAILS ─────────────────────────────────────────────────────────────
